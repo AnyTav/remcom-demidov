@@ -1,0 +1,23 @@
+.header {
+  padding: 25px 0;
+  background-color: $color-dark;
+  color: $color-ligth;
+}
+
+.header-inner {
+  @include container;
+}
+
+.header-wrap {
+  display: flex;
+}
+
+.main-logo {
+  margin-right: auto;
+  color: inherit;
+}
+
+.header-phone {
+  margin-left: 100px;
+  color: inherit;
+}
