@@ -2,3 +2,12 @@
   max-width: 1278px;
   margin: 0 auto;
 }
+
+@mixin h2 {
+  font-family: $font-rel;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 58px;
+  line-height: 68px;
+  color: $color-accent;
+}

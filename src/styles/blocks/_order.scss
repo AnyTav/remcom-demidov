@@ -8,11 +8,9 @@
 }
 
 .order-title {
+  @include h2;
   margin-top: 0;
   text-align: center;
-  font-size: 58px;
-  line-height: 68px;
-  color: $color-accent;
 }
 
 .form-order {
@@ -38,7 +36,42 @@
 
 .form-order-label {
   padding-left: 20px;
+  font-size: 20px;
+  line-height: 27px;
   color: $color-accent;
+}
+
+.form-order-label-checkbox {
+  display: flex;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-dark;
+
+  a {
+    color: $color-accent;
+  }
+
+  &:before {
+    content: '';
+    flex-shrink: 0;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 2px solid $color-accent;
+  }
+}
+
+.form-order-checkbox {
+  display: none;
+
+  &:checked + .form-order-label-checkbox:before {
+    background-color: #fff;
+    background-image: url(../images/icon-check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .form-order-input {
@@ -47,6 +80,9 @@
   padding: 20px;
   border: none;
   border-radius: 8px;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-dark;
   background-color: $color-ligth;
 }
 
@@ -58,6 +94,9 @@
   border: none;
   font-family: inherit;
   border-radius: 8px;
+  font-size: 20px;
+  line-height: 27px;
+  color: $color-dark;
   background-color: $color-ligth;
   resize: vertical;
 }
