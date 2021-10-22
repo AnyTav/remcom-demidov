@@ -10,3 +10,12 @@ $color-dark: #152B3C;
 
 // indents
 $indent-gap: 30px;
+
+// braikpoints
+$desktop-bp: 1280px;
+$tablet-bp: 768px;
+$mobile-bp: 320px;
+
+// Значения для медиазапросов по Desktop-first подходу
+$df-tablet: $desktop-bp - 1;
+$df-mobile: $tablet-bp - 1;

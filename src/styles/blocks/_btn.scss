@@ -16,3 +16,17 @@
 .btn-full {
   width: 100%;
 }
+
+.btn-desktop {
+  @media (max-width: $df-mobile) {
+    display: none;
+  }
+}
+
+.btn-mobile {
+  display: none;
+
+  @media (max-width: $df-mobile) {
+    display: inline-block;
+  }
+}
