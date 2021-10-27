@@ -1,6 +1,7 @@
 .order {
   padding-top: 100px;
   padding-bottom: 90px;
+  background-color: rgba($color-ligth, .2);
 
   @media (max-width: $df-tablet) {
     padding-top: 70px;
