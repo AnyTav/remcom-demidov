@@ -39,3 +39,11 @@
     display: none;
   }
 }
+
+.burger {
+  display: none;
+
+  @media (max-width: $df-tablet) {
+    display: block;
+  }
+}
