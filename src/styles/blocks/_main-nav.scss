@@ -1,14 +1,42 @@
 .main-nav {
 
+  @media (max-width: $df-tablet) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid $color-ligth;
+    background-color: $color-dark;
+  }
+
+  @media (max-width: $df-mobile) {
+
+  }
+
   ul {
     display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
+
+    @media (max-width: $df-tablet) {
+      justify-content: center;
+    }
+
+    @media (max-width: $df-mobile) {
+      display: block;
+      text-align: center;
+    }
   }
 
   li {
     margin-left: 30px;
+
+    @media (max-width: $df-mobile) {
+      margin: 20px 0;
+    }
   }
 
   a {
@@ -17,8 +45,19 @@
     text-decoration: none;
     color: $color-ligth;
 
+    @media (max-width: $df-mobile) {
+      display: block;
+    }
+
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+// State
+.main-nav-open {
+  @media (max-width: $df-tablet) {
+    display: block;
   }
 }

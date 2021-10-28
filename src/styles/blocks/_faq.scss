@@ -11,3 +11,23 @@
 .faq-title {
   @include h2;
 }
+
+.faq-item {
+  margin-top: 40px;
+  border: 1px solid $color-accent;
+}
+
+.faq-question {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 30px 30px 30px;
+}

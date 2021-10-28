@@ -10,81 +10,138 @@
 
 <body>
 
-<main>
-  <section class="faq">
-    <div class="faq-inner">
-      <div class="faq-title">Часто задаваемые вопросы</div>
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-wrap">
+        <a href="#" class="main-logo">RemCom</a>
+
+        <nav class="main-nav js-main-nav">
+          <ul>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Наши работы</a></li>
+          </ul>
+
+
+        </nav>
+
+        <a href="tel:+78128888888" class="header-phone">+7 812 888-88-88</a>
+
+        <button class="burger js-burger">menu</button>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <section class="order">
-    <div class="order-inner">
-      <h2 class="order-title">Заявка на ремонт</h2>
-      <form action="#" method="POST" class="form-order">
-        <div class="form-order-field">
-          <label for="name" class="form-order-label">
-            Имя
-          </label>
-          <input id="name" name="name" type="text" value="jdshskdj" class="form-order-input">
+  <main>
+
+
+    <section class="faq">
+      <div class="faq-inner">
+        <div class="faq-title">Часто задаваемые вопросы</div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question js-accordion-btn">Наш вопрос?</button>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum.</p>
+              <p>Nobis alias maiores ipsa aperiam, omnis a quis magni vitae?</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question js-accordion-btn">Наш вопрос?</button>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum.</p>
+              <p>Nobis alias maiores ipsa aperiam, omnis a quis magni vitae?</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question js-accordion-btn">Наш вопрос?</button>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum.</p>
+              <p>Nobis alias maiores ipsa aperiam, omnis a quis magni vitae?</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question js-accordion-btn">Наш вопрос?</button>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum.</p>
+              <p>Nobis alias maiores ipsa aperiam, omnis a quis magni vitae?</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="form-order-field">
-          <label for="phone" class="form-order-label">
-            Телефон
-          </label>
-          <input id="phone" name="phone" type="text" class="form-order-input">
-        </div>
+    <section class="order">
+      <div class="order-inner">
+        <h2 class="order-title">Заявка на ремонт</h2>
+        <form action="#" method="POST" class="form-order">
+          <div class="form-order-field">
+            <label for="name" class="form-order-label">
+              Имя
+            </label>
+            <input id="name" name="name" type="text" value="jdshskdj" class="form-order-input">
+          </div>
 
-        <div class="form-order-field form-order-field-full">
-          <label for="message" class="form-order-label">
-            Чито ремонтируем насяльника?
-          </label>
-          <textarea name="message" id="message" class="form-order-textarea"></textarea>
-        </div>
+          <div class="form-order-field">
+            <label for="phone" class="form-order-label">
+              Телефон
+            </label>
+            <input id="phone" name="phone" type="text" class="form-order-input">
+          </div>
 
-        <div class="form-order-field form-order-field-full">
-          <input id="check" type="checkbox" class="form-order-checkbox">
-          <label for="check" class="form-order-label-checkbox">
+          <div class="form-order-field form-order-field-full">
+            <label for="message" class="form-order-label">
+              Чито ремонтируем насяльника?
+            </label>
+            <textarea name="message" id="message" class="form-order-textarea"></textarea>
+          </div>
+
+          <div class="form-order-field form-order-field-full">
+            <input id="check" type="checkbox" class="form-order-checkbox">
+            <label for="check" class="form-order-label-checkbox">
               <span>
                 Даю согласие на перевод всех имеющихся у меня денег и материальных ценностей преподавателю
                 <a href="#">в соответствии с доброй волей</a>
               </span>
-          </label>
-        </div>
+            </label>
+          </div>
 
-        <div class="form-order-field form-order-field-full">
-          <button class="btn btn-full" type="submit">Отправить</button>
-        </div>
-      </form>
+          <div class="form-order-field form-order-field-full">
+            <button class="btn btn-full" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="copyright">Ничего не защищено</p>
+
+      <ul class="social">
+        <li class="social-item">
+          <a href="#" class="social-link social-link-insta">
+            <span class="social-text">Мы в инстаграмм</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link social-link-facebook">
+            <span class="social-text">Мы в facebook</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link social-link-telega">
+            <span class="social-text">Мы в телеге</span>
+          </a>
+        </li>
+      </ul>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <p class="copyright">Ничего не защищено</p>
-
-    <ul class="social">
-      <li class="social-item">
-        <a href="#" class="social-link social-link-insta">
-          <span class="social-text">Мы в инстаграмм</span>
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="#" class="social-link social-link-facebook">
-          <span class="social-text">Мы в facebook</span>
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="#" class="social-link social-link-telega">
-          <span class="social-text">Мы в телеге</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
-
-<script src="scripts/script.js"></script>
+  <script src="scripts/jquery-3.6.0.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

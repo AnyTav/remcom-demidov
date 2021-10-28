@@ -34,4 +34,8 @@
   line-height: 33px;
   text-decoration: none;
   color: inherit;
+
+  @media (max-width: $df-mobile) {
+    display: none;
+  }
 }
