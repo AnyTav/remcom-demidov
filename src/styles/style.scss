@@ -3,7 +3,7 @@
 @import "common/_fonts";
 @import "common/_mixins";
 @import "common/_common";
-
+@import "plugins/slick";
 
 // blocks
 @import "blocks/_header";
@@ -15,3 +15,6 @@
 @import "blocks/_social";
 @import "blocks/_footer";
 @import "blocks/_faq";
+@import "blocks/_contacts";
+@import "blocks/_portfolio";
+@import "blocks/_slider";

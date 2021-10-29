@@ -1,0 +1,41 @@
+.portfolio {
+  padding: 200px 0;
+}
+
+.portfolio-inner {
+  @include container;
+}
+
+.portfolio-title {
+  @include h2;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.filter-item {
+  margin: 0 20px;
+}
+
+.filter-link {
+  color: $color-dark;
+  text-decoration: none;
+
+  &.active {
+    color: $color-accent;
+  }
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.portfolio-item {
+  flex-basis: 25%;
+  padding: 15px;
+}

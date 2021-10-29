@@ -1,0 +1,47 @@
+.contacts {
+  padding: 200px 0;
+}
+
+.contacts-inner {
+  @include container;
+}
+
+.contacts-title {
+  @include h2;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs-item {
+  margin: 0 30px;
+}
+
+.tabs-link {
+  color: $color-dark;
+  font-size: 36px;
+  line-height: 49px;
+  text-decoration: none;
+
+  &.active {
+    text-decoration: underline;
+  }
+}
+
+.contacts-content {
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.contacts-map {
+  flex-shrink: 0;
+  width: 58.33%;
+}

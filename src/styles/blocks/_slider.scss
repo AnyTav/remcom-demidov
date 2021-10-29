@@ -1,0 +1,7 @@
+.slider {
+  padding: 100px 0;
+}
+
+.slider-inner {
+  @include container;
+}
