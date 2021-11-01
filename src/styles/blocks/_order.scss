@@ -14,6 +14,23 @@
   }
 }
 
+.order-separate {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: $desktop-bp;
+    height: 1px;
+    margin: auto;
+    background-color: $color-dark;
+    opacity: 0.2;
+  }
+}
+
 .order-inner {
   @include container;
 }

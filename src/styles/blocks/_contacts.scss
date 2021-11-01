@@ -1,5 +1,17 @@
 .contacts {
-  padding: 200px 0;
+  padding-top: 240px;
+  padding-bottom: 130px;
+  background-color: rgba($color-ligth, .2);
+
+  @media (max-width: $df-tablet) {
+    padding-top: 190px;
+    padding-bottom: 90px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
 }
 
 .contacts-inner {
@@ -8,12 +20,13 @@
 
 .contacts-title {
   @include h2;
+  margin: 0;
 }
 
 .tabs {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 100px 0 50px 0;
   padding: 0;
   list-style: none;
 }

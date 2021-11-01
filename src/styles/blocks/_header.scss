@@ -7,6 +7,10 @@
   padding: 25px 0;
   background-color: $color-dark;
   color: $color-ligth;
+
+  @media (max-width: $df-mobile) {
+    padding: 12px 0;
+  }
 }
 
 .header-inner {
@@ -26,6 +30,11 @@
   line-height: 49px;
   text-decoration: none;
   color: inherit;
+
+  @media (max-width: $df-mobile) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .header-phone {
