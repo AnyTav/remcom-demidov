@@ -79,9 +79,60 @@ $(document).ready(function(){
 
   // Слайдер
   // Проверяем есть ли разметка для слайдера на странице
-  if ( $('.slides-list').length ) {
-    $('.slides-list').slick();
+  if ( $('.js-slider-wrap').length ) {
+    $('.js-slider-wrap').each(function() {
+      $(this).find('.js-slider').slick({
+        prevArrow: $(this).find('.js-btn-prev'),
+        nextArrow: $(this).find('.js-btn-next'),
+      });
+    });
   }
 
 
+
+  $('.js-btn-review').on('click', function() {
+
+    let button = $(this);
+    button.text('...');
+  
+    $.ajax({
+      type: 'POST',
+      url: '/json/reviews.json',
+      data: 'count=4',
+      success: function(response){
+        let html = createHtml(response);
+        addToHtml(html);
+        button.text('Еще отзывы');
+      },
+      error: function(){}
+    });
+
+    function addToHtml(string) {
+      $('.js-reviews-list').append(string);
+    }
+
+    function createHtml(data) {
+      let dataArray = data.reviews;
+      let htmlString = '';
+
+      dataArray.forEach(function(item){
+        htmlString = htmlString + `<div class="reviews-item">
+          <div class="review-card">
+            <div class="review-card-photo">
+              <img src="${item.imageUrl}" alt="${item.imageAlt}" class="review-card-ava">
+            </div>
+            <div class="review-card-content">
+              <span class="review-card-name">${item.name}</span>
+              <blockquote class="review-card-quote">
+                “${item.text}”
+              </blockquote>
+            </div>
+          </div>
+        </div>`;
+      });
+
+      return htmlString;
+    }
+
+  });
 });

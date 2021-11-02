@@ -1,0 +1,16 @@
+{
+  "reviews": [
+    {
+      "imageUrl": "images/ava-inna.jpg",
+      "imageAlt": "Фото бравого Иван Иваныча",
+      "name": "Иван Иваныч",
+      "text": "Какой-то новый отзыв"
+    },
+    {
+      "imageUrl": "images/ava-jekki.jpg",
+      "imageAlt": "Фото бравого Кота Иваныча",
+      "name": "Кот Котофеич",
+      "text": "Какой-то еще более новый отзыв"
+    }
+  ]
+}
